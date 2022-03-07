@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.categories > p {
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  margin-top: 50px;
+}
+
+.cartProduct {
+  display: flex;
+  border: 1px solid black;
+  max-width: 50%;
+  margin: 1%;
+  margin-left: 6%;
+  text-align: left;
+}
+.cartProduct > div:nth-child(1) {
+  flex-basis: 20%;
+}
+.cartProduct > div:nth-child(2) {
+  flex-basis: 60%;
+}
+.cartProduct > div:nth-child(3) {
+  flex-basis: 20%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.cartProduct img {
+  width: 35px;
+  height: 170px;
+  margin: 0.5em;
+  margin-left: 30%;
+}
+.cartProduct button {
+  margin-top: 1.5em;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 5px;
+}
+.navbar > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  width: 7%;
+}
+.navbar img {
+  width: 200px;
+}
