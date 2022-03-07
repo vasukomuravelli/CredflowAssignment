@@ -92,7 +92,7 @@ export const HomePage = () => {
                 })}
                 </div>
                 <div>
-                    <Pagination onChange={pageChange} total={data.length} defaultPageSize={20} style={{ marginTop: "20px",position:"none"}}/>
+                    <Pagination onChange={pageChange} total={data.length} defaultPageSize={20} style={{ marginTop: "20px", position: "none" }} pageSizeOptions={[]}/>
                 </div>
         </div>
     )
