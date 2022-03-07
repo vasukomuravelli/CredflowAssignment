@@ -42,8 +42,8 @@ export const HomePage = () => {
         }
     }
     const pageChange = (value) => {
+        navigate(`/?page=${value}`)
         setPage(value);
-        navigate(`/?page=${page+1}`)
     }
     const handleSearch = (e) => {
         setSearch(e.target.value);
