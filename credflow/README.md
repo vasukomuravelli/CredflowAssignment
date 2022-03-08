@@ -31,15 +31,17 @@ We are paginating the data and helping the user to navigate from one page to oth
 
 Onclicking over the cart icon in the navbar, user is navigated to cart page instantly. Here, he can see the items that he added to his/her bag. I also provided the 2 buttons either to delete the product from the cart or user can save it for later(which will be added to wishlist and deleted from cart). If he finalised his cart he can proceed to checkout. 
 
-# Checkout Page
-
-![image](https://user-images.githubusercontent.com/91777048/157177314-e1472f9b-37cb-45bf-baf8-6e6dc79015e6.png)
-
-Onclicking checkout a popup will be displayed requesting user address details to deliver the product. Here every fields has to be filled or else I will alert the user to fill all the fields. When he/she fills all the fields and on clicking ok the user gets a message "Thanks for shopping, you will receive your order soon 😍".
-
 # Wishlist Page
 
 ![image](https://user-images.githubusercontent.com/91777048/157174813-acf63c4d-1824-4127-80b1-c5f130691432.png)
 
 This page features the products that were saved for later by user. Here you move products in to cart or delete from the wishlist.
 
+
+# Checkout Page
+
+![image](https://user-images.githubusercontent.com/91777048/157177314-e1472f9b-37cb-45bf-baf8-6e6dc79015e6.png)
+
+Onclicking checkout a popup will be displayed requesting user address details to deliver the product. Here every fields has to be filled or else I will alert the user to fill all the fields. When he/she fills all the fields and on clicking ok the user gets a message "Thanks for shopping, you will receive your order with orderId:55869 soon 😍" and gets navigated to the homePage.
+
+Find the RealTime deployment : https://credflow-seven.vercel.app/
