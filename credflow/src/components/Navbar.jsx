@@ -10,9 +10,9 @@ export const Navbar = () => {
         <div className="navbar">
             <Link to="/"><img src="https://winestore-online.com/Themes/Winestore/Assets/images/winestore-logo.svg" alt="logo"/></Link>
             <div>
-                <Link to="/wishlist"><CgProfile style={{ fontSize: "35px", cursor: "pointer" }} /></Link>
+                <Link to="/wishlist"><CgProfile style={{ fontSize: "35px", cursor: "pointer",color: "grey" }} /></Link>
                 <div className="cart">
-                    <Link to="/cart"><AiOutlineShoppingCart style={{fontSize:"35px"}}/></Link>
+                    <Link to="/cart"><AiOutlineShoppingCart style={{fontSize:"35px",color: cart.length>0 ? "blue" : "grey"}}/></Link>
                     <div>{cart.length}</div>
                 </div>
             </div>
