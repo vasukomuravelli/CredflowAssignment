@@ -2,14 +2,16 @@ import React from 'react'
 import { cartApi } from "../context/CartApi"
 import {wishlistApi} from "../context/WishlistApi"
 import { AiFillStar } from "react-icons/ai"
-import {Button,Modal,Input} from "antd"
+import { Button, Modal, Input } from "antd"
+import {useNavigate} from "react-router-dom"
 
 
 export const Cart = () => {
     const { cart, deleteCart } = React.useContext(cartApi);
     const { handleWishlist } = React.useContext(wishlistApi);
     const [isModalVisible, setIsModalVisible] = React.useState(false);
-    const [address,setAddress] = React.useState({});
+    const [address, setAddress] = React.useState({});
+    const navigate = useNavigate();
     const addToWishlist = (e) => {
         handleWishlist(e);
         deleteCart(e.wine);
@@ -23,6 +25,7 @@ export const Cart = () => {
             while (cart.length) {
                 cart.length--;
             }
+            navigate("/");
         }
         else {
             alert(" Please fill out all the fields");
