@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# CredFlow WineStore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this website, I was featuring a wine store where users can refer to the ratings, reviews, and the location of the wine and accessing them to add into their cart. Here there is a navbar where users can easily navigate from one page to other. Let me clearly explain you the flow.
 
-## Available Scripts
+# Landing Page
+![image](https://user-images.githubusercontent.com/91777048/157174073-e536bb07-f985-4f94-8ca7-9916a24152ea.png)
 
-In the project directory, you can run:
+As shown in the above picture we are provided every products with a button which helps in adding them to their cart and that can be observed at the count available near the cart icon in the navbar. Here users can also change their categories just by clicking over them.
 
-### `npm start`
+# searching Functionality
+![image](https://user-images.githubusercontent.com/91777048/157174196-9e528ee4-db64-47a2-868d-dcc67cef95af.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Using the search bar provided, users can flexibly look for their favourite products availble or not.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Filtering options
+![image](https://user-images.githubusercontent.com/91777048/157174275-c0f3ac06-fcc5-45a4-a9b7-07dff16ad40a.png)
 
-### `npm test`
+Using the filter options provided, he can fetch the products based on the count of reviews recieved over the product.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Pagination
+![image](https://user-images.githubusercontent.com/91777048/157174413-084e1cf2-dbee-4cdf-9e25-40f3207d913d.png)
 
-### `npm run build`
+We are paginating the data and helping the user to navigate from one page to other in buttery flow.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# CartPage
+![image](https://user-images.githubusercontent.com/91777048/157174588-9c803e6c-b992-4664-9355-bad50cd529d6.png)
+Onclicking over the cart icon in the navbar, user is navigated to cart page instantly. Here, he can see the items that he added to his/her bag. I also provided the 2 buttons either to delete the product from the cart or user can save it for later(which will be added to wishlist)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Wishlist Page
+![image](https://user-images.githubusercontent.com/91777048/157174813-acf63c4d-1824-4127-80b1-c5f130691432.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
