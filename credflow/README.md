@@ -2,6 +2,12 @@
 
 In this website, I was featuring a wine store where users can refer to the ratings, reviews, and the location of the wine and accessing them to add into their cart. Here there is a navbar where users can easily navigate from one page to other. Let me clearly explain you the flow.
 
+TechStacks used:
+- React
+- CSS
+- AntD
+- HTML
+
 # Landing Page
 
 ![image](https://user-images.githubusercontent.com/91777048/157174073-e536bb07-f985-4f94-8ca7-9916a24152ea.png)
