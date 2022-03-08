@@ -1,6 +1,19 @@
 .App {
   text-align: center;
 }
+.cart {
+  position: relative;
+}
+.cart > div {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: deeppink;
+  color: #fff;
+  width: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
 
 .categories {
   display: flex;
@@ -21,10 +34,14 @@
 }
 .products {
   display: grid;
-  grid-template-columns: repeat(4, 24.5%);
+  grid-template-columns: repeat(4, 24%);
   margin-top: 50px;
   grid-gap: 1%;
   margin-bottom: 110px;
+}
+.products img {
+  width: 50px;
+  height: 200px;
 }
 .cartPage {
   display: flex;
@@ -39,7 +56,7 @@
 .cartProduct {
   display: flex;
   max-width: 90%;
-  margin: 1%;
+  margin: 2%;
   margin-left: 6%;
   text-align: left;
   box-shadow: 0px 6px 10px 6px rgba(80, 116, 235, 0.4);

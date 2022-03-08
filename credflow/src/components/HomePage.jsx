@@ -64,10 +64,10 @@ export const HomePage = () => {
                         <Input onChange={(e)=>handleSearch(e)} placeholder="Search for your favourites wines"/>
                         <div className="output" style={{display:results.length>0?"block":"none"}}>{results?results.map(e => <p key={e.id} >{e.wine}</p>):null}</div>
                 </div>
-                <Select onChange={filterChange} style={{marginLeft:"20%",width:"fit-content"}} placeholder="Find by Filter....      .">
-                    <Option value="Rl500">Reviews lesser than 500</Option>
+                <Select onChange={filterChange} style={{marginLeft:"20%",width:"200px"}} placeholder="Find by Filter....      .">
                     <Option value="Rg500">Reviews greater than 500</Option>
                     <Option value="Rg1000">Reviews greater than 1000</Option>
+                    <Option value="Rl500">Reviews lesser than 500</Option>
                 </Select>
             </div>    
             <div className="categories">
@@ -82,7 +82,7 @@ export const HomePage = () => {
                 {pagedData.map(e=>{
                     return (
                         <div key ={e.id}>
-                            <img src={e.image} alt={e.wine} style={{width:"50px",height:"200px"}}/>
+                            <img src={e.image} alt={e.wine} />
                             <p>{e.wine}</p>
                             <p>Location : {e.location}</p>
                             <p>Rating : {e.rating.average} <AiFillStar style={{color:"rgb(249,158,0)"}}/></p>

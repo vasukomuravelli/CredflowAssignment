@@ -15,10 +15,10 @@ export const Cart = () => {
         deleteCart(e.wine);
     }
     const handleOk = () => {
-        if (Object.keys(address).length >= 4) {
+        if (Object.keys(address).length >= 5) {
             setIsModalVisible(false);
             Modal.success({
-                content: `Thanks for shopping, you will receive your order soon 😍`,
+                content: `Thanks for shopping, you will receive your order with orderId ${Math.floor(Math.random()*100000)} soon 😍`,
             });
             while (cart.length) {
                 cart.length--;
@@ -58,10 +58,11 @@ export const Cart = () => {
                 <div>
                     <p>Total Quantity : {cart.length}</p>
                     <Button onClick={()=>setIsModalVisible(true)}>Check Out</Button>
-                    <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={() => setIsModalVisible(false)}>
+                    <Modal title="Please fill your Address" visible={isModalVisible} onOk={handleOk} onCancel={() => setIsModalVisible(false)}>
                         <Input type="text" placeholder="Enter your House Number" id="HNO" required onChange={(e)=>handleChange(e)}/><br/><br/>
                         <Input type="text" placeholder="Enter your District" id="district" required onChange={(e)=>handleChange(e)}/><br/><br/>
                         <Input type="text" placeholder="Enter your State" id="state" required onChange={(e)=>handleChange(e)}/><br/><br/>
+                        <Input type="Number" placeholder="Enter your Pincode" id="Pincode" required onChange={(e)=>handleChange(e)}/><br/><br/>
                         <Input type="Number" placeholder="Enter your Phone Number" id="phone" required onChange={(e)=>handleChange(e)}/><br/><br/>
                     </Modal>
                 </div>

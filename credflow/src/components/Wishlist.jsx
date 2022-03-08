@@ -27,7 +27,7 @@ export const Wishlist = () => {
                             <p>Rating : {e.rating.average} <AiFillStar style={{color:"rgb(249,158,0)"}}/></p>
                             <p>{e.rating.reviews.split(' ')[0]} Reviews</p>
                         </div>
-                        <div>
+                        <div style={{marginTop:"2%"}}>
                             <Button onClick={()=>addTocart(e)} type="primary" >Add To Cart</Button><br/>
                             <Button onClick={()=>deleteWishlist(e.wine)} type="primary" danger>Delete </Button>
                         </div>
